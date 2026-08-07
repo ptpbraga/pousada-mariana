@@ -1,0 +1,59 @@
+name: Publicar no GitHub Pages
+
+# Republica o site a cada envio para a branch main.
+# Tambem da para rodar na mao pela aba Actions do GitHub.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissoes minimas necessarias para publicar.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Se dois envios acontecerem juntos, publica so o mais recente.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  construir:
+    name: Construir o site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o codigo
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Gerar a versao de producao
+        run: npm run build
+
+      - name: Configurar o Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar a pasta dist
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publicar:
+    name: Publicar
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Colocar no ar
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /creditos.html
+
+Sitemap: https://pousadamariana.com.br/sitemap.xml

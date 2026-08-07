@@ -10,8 +10,10 @@ function whatsapp(mensagem) {
 }
 
 export const shared = {
+  siteUrl: 'https://pousadamariana.com.br',
+  ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
   telefonePrincipal: '(38) 3541-1569',
-  telefoneSecundario: '(38) 3541-2627',
+  telefoneSecundario: '',
   telefoneLink: '+553835411569',
   telefoneSecundarioLink: '+553835412627',
 
@@ -34,23 +36,29 @@ export const shared = {
 export const pages = {
   'index.html': {
     pagina: 'inicio',
-    titulo: 'Pousada Mariana | Hospedagem no Centro Histórico do Serro',
+    titulo: 'Pousada no Serro MG | Centro Histórico & Café Mineiro',
     descricao:
-      'Pousada Mariana, no centro histórico do Serro-MG. Quartos acolhedores, café da manhã mineiro, atendimento 24 horas e reservas por WhatsApp ou Booking.',
+      'Hospede-se na Pousada Mariana no centro histórico do Serro, MG. Quartos confortáveis com ar-condicionado, café da manhã mineiro artesanal e recepção 24h. Reserve direto!',
+    urlCanonical: 'https://pousadamariana.com.br/',
+    ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
     // Na home os links de seção são âncoras puras; nas outras páginas precisam do arquivo.
     inicioHref: '',
   },
   'passeios.html': {
     pagina: 'passeios',
-    titulo: 'Passeios no Serro e Região | Pousada Mariana',
+    titulo: 'Guia de Passeios no Serro MG e Região | Pousada Mariana',
     descricao:
-      'Guia de passeios da Pousada Mariana: pontos históricos, cachoeiras, bares e restaurantes no Serro, Milho Verde, São Gonçalo do Rio das Pedras e Santo Antônio do Itambé.',
+      'Guia completo de passeios no Serro MG: pontos históricos, cachoeiras em Milho Verde, São Gonçalo do Rio das Pedras e Pico do Itambé. Planeje sua viagem!',
+    urlCanonical: 'https://pousadamariana.com.br/passeios.html',
+    ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
     inicioHref: 'index.html',
   },
   'creditos.html': {
     pagina: 'creditos',
-    titulo: 'Créditos das imagens | Pousada Mariana',
-    descricao: 'Créditos e licenças das imagens usadas no site da Pousada Mariana.',
+    titulo: 'Créditos das Imagens | Pousada Mariana Serro MG',
+    descricao: 'Créditos e licenças das imagens e fotografias usadas no site da Pousada Mariana em Serro, MG.',
+    urlCanonical: 'https://pousadamariana.com.br/creditos.html',
+    ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
     inicioHref: 'index.html',
   },
 };

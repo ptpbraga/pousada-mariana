@@ -1,5 +1,10 @@
-# Cache para Netlify, Cloudflare Pages e afins.
-# Equivalente ao .htaccess, para hospedagens modernas.
+# Cache e cabecalhos de seguranca para Netlify, Cloudflare Pages e afins.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

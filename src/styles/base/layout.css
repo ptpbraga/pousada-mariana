@@ -1,0 +1,12 @@
+.container { width: min(calc(100% - 48px), var(--container)); margin-inline: auto; }
+.section { padding: 120px 0; }
+.section-soft { background: var(--cream); }
+
+@media (max-width: 820px) {
+  .container { width: min(calc(100% - 32px), var(--container)); }
+  .section { padding: 84px 0; }
+}
+
+@media (max-width: 560px) {
+  .container { width: min(calc(100% - 24px), var(--container)); }
+}

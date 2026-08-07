@@ -1,0 +1,32 @@
+h1, h2, h3 {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+}
+
+h1 { font-size: clamp(54px, 6.1vw, 92px); }
+h2 { font-size: clamp(42px, 5vw, 68px); }
+h3 { font-size: 28px; }
+h1 em, h2 em { color: var(--terracotta); font-weight: 500; }
+
+.lead { font-size: clamp(18px, 2vw, 23px); line-height: 1.5; }
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--terracotta);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.eyebrow-light { color: #efc97f; }
+
+.text-link {
+  color: var(--terracotta);
+  font-size: 13px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(184, 92, 61, .35);
+}

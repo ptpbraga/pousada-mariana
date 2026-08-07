@@ -1,0 +1,17 @@
+.credits-page { min-height: 65vh; padding: 90px 0 130px; }
+.credits-page h1 { font-size: clamp(45px, 6vw, 72px); }
+.credits-page > .container > p { max-width: 750px; color: var(--muted); }
+
+.credit-list { display: grid; gap: 10px; margin-top: 45px; }
+.credit-item { display: grid; grid-template-columns: 90px 1fr auto; align-items: center; gap: 18px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; }
+.credit-item img { width: 90px; height: 65px; object-fit: cover; border-radius: 6px; }
+.credit-item strong, .credit-item small { display: block; }
+.credit-item strong { font-size: 12px; }
+.credit-item small { color: var(--muted); font-size: 10px; }
+.credit-item a { color: var(--terracotta); font-size: 11px; font-weight: 700; }
+
+@media (max-width: 560px) {
+  .credit-item { grid-template-columns: 70px 1fr; }
+  .credit-item img { width: 70px; height: 55px; }
+  .credit-item > a { grid-column: 2; }
+}

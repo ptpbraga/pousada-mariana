@@ -1,0 +1,13 @@
+.guide-intro { display: grid; grid-template-columns: .75fr 1.25fr; gap: 100px; }
+.guide-intro-copy .lead { margin-top: 0; }
+.guide-intro-copy p:not(.lead) { color: var(--muted); }
+.guide-intro-copy > .text-link { display: inline-block; margin-top: 22px; }
+
+.guide-note { display: grid; grid-template-columns: auto 1fr; gap: 16px; margin-top: 28px; padding: 20px; background: var(--cream); border-radius: 10px; }
+.guide-note span { color: var(--terracotta); font-size: 20px; }
+.guide-note p { margin: 0; font-size: 11px; }
+.guide-note strong { display: block; color: var(--ink); font-size: 12px; }
+
+@media (max-width: 820px) {
+  .guide-intro { grid-template-columns: 1fr; gap: 55px; }
+}

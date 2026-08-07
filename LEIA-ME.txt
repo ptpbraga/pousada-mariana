@@ -1,0 +1,75 @@
+POUSADA MARIANA - SITE
+======================
+
+O site agora usa Vite. Isso significa que existe uma etapa de "build":
+voce edita os arquivos em src/ e o Vite gera a versao final em dist/.
+
+
+COMO VER O SITE NO SEU COMPUTADOR
+---------------------------------
+Abra o Prompt de Comando nesta pasta e rode:
+
+    npm install      (so na primeira vez)
+    npm run dev
+
+Depois abra http://localhost:5173 no navegador.
+Ao salvar qualquer arquivo, a pagina se atualiza sozinha.
+
+IMPORTANTE: nao adianta mais dar dois cliques no index.html.
+Os arquivos em src/ precisam passar pelo Vite antes de funcionar.
+
+
+COMO GERAR A VERSAO PARA PUBLICAR
+---------------------------------
+    npm run build
+
+Isso cria a pasta dist/. E o CONTEUDO de dist/ que voce envia para a
+hospedagem (nao a pasta inteira, e sim os arquivos de dentro dela).
+
+Para conferir o resultado antes de publicar:
+
+    npm run preview     ->  http://localhost:4173
+
+
+ONDE MEXER EM CADA COISA
+------------------------
+Textos das paginas ........... index.html, passeios.html, creditos.html
+Cabecalho, rodape, menu ...... src/partials/        (valem para todas as paginas)
+Telefone, WhatsApp, Booking .. build/site-data.js   (muda em todo o site de uma vez)
+Titulo e descricao (Google) .. build/site-data.js
+Cores e fontes ............... src/styles/base/tokens.css
+Estilo de uma secao .......... src/styles/pages/ e src/styles/components/
+Comportamentos (menu, etc.) .. src/scripts/modules/
+
+
+FOTOS
+-----
+As fotos originais ficam em originais/imagens/ e nunca sao alteradas.
+Para adicionar uma foto nova:
+
+    1. coloque o arquivo em originais/imagens/
+    2. rode:  npm run imagens
+    3. use no HTML o caminho /src/assets/images/... com final .webp
+
+O comando converte tudo para WebP (arquivo bem menor, mesma qualidade).
+
+
+ANTES DE PUBLICAR
+-----------------
+1. Em src/partials/head.html, troque o og:image por um endereco completo
+   (https://pousadamariana.com.br/...). Isso e o que aparece na miniatura
+   quando alguem compartilha o site no WhatsApp.
+
+2. Confira o valor da diaria. Hoje o site diz "Sob consulta" no topo e
+   "R$ 220 por pessoa" na secao de contato: escolha um dos dois.
+
+3. Confirme os horarios do cafe da manha e os contatos dos guias locais.
+
+Os arquivos .htaccess e _headers ja vao dentro de dist/ e cuidam do cache
+do navegador. Nao precisa mexer.
+
+
+COPIA DE SEGURANCA
+------------------
+originais/imagens/     fotos originais, sem compressao
+originais/site-antigo/ o CSS e o JavaScript da versao anterior do site

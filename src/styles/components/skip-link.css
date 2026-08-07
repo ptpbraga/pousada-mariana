@@ -1,0 +1,12 @@
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  left: 20px;
+  top: -100px;
+  padding: 12px 18px;
+  color: white;
+  background: var(--forest-900);
+  border-radius: 0 0 8px 8px;
+}
+
+.skip-link:focus { top: 0; }

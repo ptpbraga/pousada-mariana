@@ -1,0 +1,10 @@
+# Normaliza as quebras de linha: LF no repositorio, nativo no disco.
+# Evita que o Windows gere diferencas falsas em todo arquivo.
+* text=auto eol=lf
+
+# Arquivos binarios: nunca converter.
+*.webp binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.woff2 binary

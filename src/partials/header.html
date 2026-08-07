@@ -1,0 +1,23 @@
+<header class="site-header" data-header>
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Pousada Mariana, página inicial">
+      <img class="brand-logo" src="/src/assets/images/logo-original.png"
+           alt="Pousada Mariana · Serro MG" width="188" height="93">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Navegação principal" data-menu>
+      <a data-nav="inicio" href="index.html">Início</a>
+      <a href="{{inicioHref}}#pousada">A pousada</a>
+      <a href="{{inicioHref}}#acomodacoes">Acomodações</a>
+      <a href="{{inicioHref}}#cafe">Café da manhã</a>
+      <a data-nav="passeios" href="passeios.html">Passeios</a>
+      <a href="{{inicioHref}}#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn-small btn-booking nav-cta" href="{{urlBooking}}" target="_blank" rel="noopener">Ver no Booking</a>
+  </div>
+</header>

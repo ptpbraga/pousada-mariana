@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  Marca que o JavaScript esta ativo antes da primeira pintura.
+  So com essa classe o CSS esconde os elementos .reveal para anima-los.
+  Sem JS, o site continua legivel.
+-->
+<script>document.documentElement.classList.add('js');</script>
+<meta name="description" content="{{descricao}}">
+<meta name="theme-color" content="#173326">
+<title>{{titulo}}</title>
+
+<link rel="icon" type="image/png" href="/src/assets/images/logo-original.png">
+<link rel="apple-touch-icon" href="/src/assets/images/logo-original.png">
+
+<!--
+  Compartilhamento em WhatsApp / redes sociais.
+  Depois de publicar, troque og:image por uma URL absoluta
+  (ex.: https://pousadamariana.com.br/assets/img/logo.png)
+  porque alguns aplicativos nao aceitam caminho relativo.
+-->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Pousada Mariana">
+<meta property="og:title" content="{{titulo}}">
+<meta property="og:description" content="{{descricao}}">
+<meta property="og:image" content="/src/assets/images/pousada/cabecalho01.webp">
+
+<script type="module" src="/src/scripts/main.js"></script>

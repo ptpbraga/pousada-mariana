@@ -1,0 +1,33 @@
+/**
+ * Animacoes de entrada.
+ *
+ * O efeito so e aplicado quando existe a classe "js" no <html>, adicionada
+ * por um script no <head>. Assim, se o JavaScript nao rodar (falha de rede,
+ * navegador antigo, extensao bloqueando), o conteudo aparece normalmente
+ * em vez de ficar invisivel para sempre.
+ *
+ * Este arquivo e importado por ultimo: o bloco prefers-reduced-motion
+ * precisa vencer as regras de todos os componentes.
+ */
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .75s ease, transform .75s ease;
+}
+
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+.reveal-delay-1 { transition-delay: .12s; }
+.reveal-delay-2 { transition-delay: .22s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+
+  .js .reveal { opacity: 1; transform: none; }
+}

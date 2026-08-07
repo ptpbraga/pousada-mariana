@@ -1,0 +1,21 @@
+.amenities { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--line); }
+.amenity { display: flex; gap: 12px; padding: 5px 20px; border-right: 1px solid var(--line); }
+.amenity:first-child { padding-left: 0; }
+.amenity:last-child { border: 0; }
+.amenity > span { color: var(--terracotta); font-size: 21px; }
+.amenity p { margin: 0; }
+.amenity strong, .amenity small { display: block; }
+.amenity strong { font-size: 12px; }
+.amenity small { margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.35; }
+
+@media (max-width: 1080px) {
+  .amenities { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
+  .amenity:nth-child(3) { border-right: 0; }
+}
+
+@media (max-width: 560px) {
+  .amenities { grid-template-columns: 1fr 1fr; }
+  .amenity { padding: 4px 12px; }
+  .amenity:nth-child(2n) { border: 0; }
+  .amenity:nth-child(3) { border-right: 1px solid var(--line); }
+}

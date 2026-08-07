@@ -1,0 +1,28 @@
+.lightbox {
+  position: fixed;
+  width: min(94vw, 1120px);
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  overflow: visible;
+}
+
+.lightbox::backdrop { background: rgba(8, 20, 13, .92); backdrop-filter: blur(8px); }
+.lightbox img { max-height: 84vh; object-fit: contain; border-radius: 10px; box-shadow: 0 30px 100px rgba(0, 0, 0, .4); }
+
+.lightbox button {
+  position: absolute;
+  z-index: 2;
+  right: -10px;
+  top: -48px;
+  width: 38px;
+  height: 38px;
+  color: white;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+}

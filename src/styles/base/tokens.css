@@ -1,0 +1,32 @@
+/**
+ * Design tokens: cores, sombras e medidas do site.
+ * Alterar um valor aqui muda o site inteiro.
+ *
+ * Breakpoints usados nos componentes (sempre nesta ordem):
+ *   1080px - notebook pequeno
+ *    820px - tablet / menu vira gaveta
+ *    560px - celular
+ */
+
+:root {
+  --forest-950: #10271d;
+  --forest-900: #173326;
+  --forest-800: #214634;
+  --forest-700: #2f5a44;
+  --terracotta: #b85c3d;
+  --terracotta-dark: #994329;
+  --gold: #d3a447;
+  --cream: #f4eee2;
+  --cream-2: #ebe2d1;
+  --paper: #fffaf1;
+  --white: #fffdf8;
+  --ink: #1d2b23;
+  --muted: #657069;
+  --line: rgba(29, 43, 35, .14);
+  --shadow: 0 24px 70px rgba(20, 38, 28, .14);
+  --radius: 18px;
+  --container: 1200px;
+
+  --fonte-texto: "DM Sans Variable", "DM Sans", Arial, sans-serif;
+  --fonte-titulo: "Fraunces Variable", "Fraunces", Georgia, serif;
+}

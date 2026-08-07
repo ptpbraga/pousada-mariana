@@ -1,0 +1,33 @@
+# Cache e compressao para servidores Apache (hospedagem tradicional).
+# Este arquivo e copiado para dentro de dist/ automaticamente.
+
+# --- Compressao -------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# --- Cache ------------------------------------------------------------------
+# Arquivos em /assets/ tem hash no nome: se o conteudo muda, o nome muda.
+# Por isso podem ser guardados por 1 ano sem risco de o visitante ver
+# uma versao antiga.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2|webp|png|jpg|jpeg|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # O HTML nunca e cacheado: e ele que aponta para os arquivos novos.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# --- Tipos MIME -------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>
+
+# --- Paginas de erro --------------------------------------------------------
+ErrorDocument 404 /index.html

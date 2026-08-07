@@ -1,0 +1,11 @@
+# Cache para Netlify, Cloudflare Pages e afins.
+# Equivalente ao .htaccess, para hospedagens modernas.
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

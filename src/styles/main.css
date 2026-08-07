@@ -1,0 +1,51 @@
+/**
+ * Folha mestra: define a ordem da cascata.
+ * A ordem importa, entao mantenha os blocos nesta sequencia.
+ */
+
+/* 1. Fontes auto-hospedadas (sem chamada externa ao Google Fonts). */
+@import "@fontsource-variable/dm-sans/wght.css";
+@import "@fontsource-variable/fraunces/wght.css";
+
+/* 2. Fundacao: variaveis, reset, grid e tipografia. */
+@import "./base/tokens.css";
+@import "./base/reset.css";
+@import "./base/layout.css";
+@import "./base/typography.css";
+
+/* 3. Componentes reutilizados em mais de uma pagina. */
+@import "./components/skip-link.css";
+@import "./components/topbar.css";
+@import "./components/site-header.css";
+@import "./components/button.css";
+@import "./components/section-head.css";
+@import "./components/site-footer.css";
+@import "./components/whatsapp-float.css";
+@import "./components/lightbox.css";
+@import "./components/filters.css";
+
+/* 4. Secoes da pagina inicial. */
+@import "./pages/home/hero.css";
+@import "./pages/home/quick-book.css";
+@import "./pages/home/intro.css";
+@import "./pages/home/rooms.css";
+@import "./pages/home/amenities.css";
+@import "./pages/home/breakfast.css";
+@import "./pages/home/history.css";
+@import "./pages/home/destinations.css";
+@import "./pages/home/reviews.css";
+@import "./pages/home/contact.css";
+
+/* 5. Secoes da pagina de passeios. */
+@import "./pages/passeios/page-hero.css";
+@import "./pages/passeios/guide-intro.css";
+@import "./pages/passeios/places.css";
+@import "./pages/passeios/food.css";
+@import "./pages/passeios/itinerary.css";
+@import "./pages/passeios/guides.css";
+
+/* 6. Pagina de creditos. */
+@import "./pages/creditos.css";
+
+/* 7. Animacoes por ultimo: prefers-reduced-motion precisa vencer todo o resto. */
+@import "./base/motion.css";

@@ -1,32 +1,57 @@
 /**
- * Design tokens: cores, sombras e medidas do site.
- * Alterar um valor aqui muda o site inteiro.
- *
- * Breakpoints usados nos componentes (sempre nesta ordem):
- *   1080px - notebook pequeno
- *    820px - tablet / menu vira gaveta
- *    560px - celular
+ * Design tokens: cores, sombras e medidas alinhadas à identidade visual da marca.
+ * Cores extraídas do logotipo oficial (Madeira colonial/Café, Terracota, Ouro do Serro e Papel artesanal).
+ * Contornos dos cartões inspirados na silhueta em arco colonial do logotipo.
  */
 
 :root {
-  --forest-950: #10271d;
-  --forest-900: #173326;
-  --forest-800: #214634;
-  --forest-700: #2f5a44;
+  /* Paleta Principal da Marca */
+  --brand-espresso-950: #20130f;
+  --brand-espresso-900: #331f18;
+  --brand-espresso-850: #3d261e;
+  --brand-espresso-800: #4a2f26;
+  --brand-espresso-700: #5e3c31;
+
+  /* Aliases para compatibilidade total */
+  --forest-950: var(--brand-espresso-950);
+  --forest-900: var(--brand-espresso-900);
+  --forest-800: var(--brand-espresso-800);
+  --forest-700: var(--brand-espresso-700);
+
+  /* Terracota e Ouro do Logotipo */
   --terracotta: #b85c3d;
   --terracotta-dark: #994329;
-  --gold: #d3a447;
-  --cream: #f4eee2;
-  --cream-2: #ebe2d1;
-  --paper: #fffaf1;
-  --white: #fffdf8;
-  --ink: #1d2b23;
-  --muted: #657069;
-  --line: rgba(29, 43, 35, .14);
-  --shadow: 0 24px 70px rgba(20, 38, 28, .14);
-  --radius: 18px;
-  --container: 1200px;
+  --terracotta-light: #f7ede8;
+  --gold: #f5b91e;
+  --gold-warm: #ffc31e;
+  --gold-dark: #d89916;
+  --gold-soft: #faebc3;
 
+  /* Fundos Clientes e Papeis Coloniais */
+  --cream: #f7f1e6;
+  --cream-2: #ede3d2;
+  --paper: #fffcf7;
+  --white: #ffffff;
+
+  /* Textos, Linhas e Sombras */
+  --ink: #2b1d17;
+  --muted: #6f5f57;
+  --line: rgba(74, 47, 38, 0.13);
+  --line-strong: rgba(74, 47, 38, 0.22);
+  --line-light: rgba(255, 255, 255, 0.16);
+  --shadow: 0 16px 45px rgba(43, 29, 23, 0.09);
+  --shadow-lg: 0 28px 75px rgba(32, 19, 15, 0.16);
+
+  /* Contornos e Arcos da Marca (Similares ao arco e topo arredondado do logotipo) */
+  --radius-card: 28px 28px 14px 14px;
+  --radius-box: 24px 24px 12px 12px;
+  --radius-arch-lg: 220px 220px 22px 22px;
+  --radius-arch-sm: 110px 110px 14px 14px;
+  --radius-pill: 999px;
+  --radius-logo: 50% 50% 45% 45%;
+  --radius: 16px;
+
+  --container: 1200px;
   --fonte-texto: "DM Sans Variable", "DM Sans", Arial, sans-serif;
   --fonte-titulo: "Fraunces Variable", "Fraunces", Georgia, serif;
 }

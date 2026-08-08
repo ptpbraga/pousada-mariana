@@ -5,9 +5,9 @@
 .place-section-head { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 50px; margin-bottom: 36px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
 .place-section-head p { justify-self: end; max-width: 510px; margin: 0; color: var(--muted); }
 
-.place-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.place-card { background: white; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
-.place-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.place-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.place-card { background: white; border: 1px solid var(--line-strong); border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow); transition: transform .25s ease, box-shadow .25s ease; }
+.place-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
 .place-card[hidden] { display: none; }
 
 .place-image { position: relative; height: 260px; overflow: hidden; }
@@ -18,10 +18,10 @@
   position: absolute;
   left: 14px;
   top: 14px;
-  padding: 7px 10px;
+  padding: 7px 12px;
   color: white;
-  background: rgba(16, 39, 29, .78);
-  border: 1px solid rgba(255, 255, 255, .22);
+  background: rgba(32, 19, 15, .82);
+  border: 1px solid rgba(255, 255, 255, .25);
   border-radius: 999px;
   backdrop-filter: blur(6px);
   font-size: 9px;
@@ -30,7 +30,7 @@
   text-transform: uppercase;
 }
 
-.place-body { padding: 24px; }
+.place-body { padding: 26px; }
 .place-body h3 { margin-bottom: 12px; font-size: 25px; }
 .place-body > p { min-height: 78px; margin: 0 0 18px; color: var(--muted); font-size: 12px; }
 

@@ -1,11 +1,11 @@
-.reviews { color: white; background: #c66c4b; }
+.reviews { color: white; background: var(--terracotta); }
 .reviews-grid { display: grid; grid-template-columns: .62fr 1.38fr; gap: 70px; align-items: stretch; }
 
-.rating-card { padding: 48px; background: var(--forest-900); border-radius: 16px; }
-.rating-number { display: block; margin-top: 35px; font-family: var(--fonte-titulo); font-size: 88px; font-weight: 500; line-height: .85; }
-.stars { margin-top: 20px; color: #edc069; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
-.rating-card > p:not(.eyebrow) { margin: 14px 0 28px; color: #c9d8ce; }
-.rating-card a { font-size: 12px; font-weight: 700; border-bottom: 1px solid rgba(255, 255, 255, .35); }
+.rating-card { padding: 48px; background: var(--brand-espresso-900); border: 1px solid rgba(255, 255, 255, .12); border-radius: var(--radius-card); box-shadow: var(--shadow-lg); }
+.rating-number { display: block; margin-top: 35px; font-family: var(--fonte-titulo); font-size: 88px; font-weight: 500; line-height: .85; color: var(--gold-warm); }
+.stars { margin-top: 20px; color: var(--gold-warm); font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.rating-card > p:not(.eyebrow) { margin: 14px 0 28px; color: #eedbd2; }
+.rating-card a { font-size: 12px; font-weight: 700; color: white; border-bottom: 1px solid rgba(255, 255, 255, .35); }
 
 .rating-breakdown {
   display: grid;
@@ -17,11 +17,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, .14);
 }
 
-.rating-breakdown li { display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: #c9d8ce; }
+.rating-breakdown li { display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: #eedbd2; }
 .rating-breakdown strong { color: white; font-weight: 700; }
 
 .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.quote { display: flex; flex-direction: column; justify-content: space-between; margin: 0; padding: 46px; color: var(--ink); background: var(--paper); border-radius: 16px; }
+.quote { display: flex; flex-direction: column; justify-content: space-between; margin: 0; padding: 46px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-card); box-shadow: var(--shadow); }
 .quote::before { content: "“"; color: var(--terracotta); font-family: var(--fonte-titulo); font-size: 64px; line-height: .4; }
 .quote > p { margin: 30px 0 42px; font-family: var(--fonte-titulo); font-size: 21px; line-height: 1.55; }
 .quote footer strong, .quote footer span { display: block; }

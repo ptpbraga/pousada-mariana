@@ -38,7 +38,7 @@ export const pages = {
     pagina: 'inicio',
     titulo: 'Pousada no Serro MG | Centro Histórico & Café Mineiro',
     descricao:
-      'Hospede-se na Pousada Mariana no centro histórico do Serro, MG. Quartos confortáveis com ar-condicionado, café da manhã mineiro artesanal e recepção 24h. Reserve direto!',
+      'Hospede-se na Pousada Mariana no centro histórico do Serro, MG. Quartos confortáveis com ar-condicionado, TV, frigobar, café da manhã mineiro artesanal e portaria 24h. Reserve direto!',
     urlCanonical: 'https://pousadamariana.com.br/',
     ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
     // Na home os links de seção são âncoras puras; nas outras páginas precisam do arquivo.
@@ -48,7 +48,7 @@ export const pages = {
     pagina: 'passeios',
     titulo: 'Guia de Passeios no Serro MG e Região | Pousada Mariana',
     descricao:
-      'Guia completo de passeios no Serro MG: pontos históricos, cachoeiras em Milho Verde, São Gonçalo do Rio das Pedras e Pico do Itambé. Planeje sua viagem!',
+      'Guia completo de passeios no Serro MG: centro histórico tombado, Rota do Queijo artesanal, cachoeiras em Milho Verde, São Gonçalo e Pico do Itambé. Planeje sua viagem!',
     urlCanonical: 'https://pousadamariana.com.br/passeios.html',
     ogImage: 'https://pousadamariana.com.br/assets/webp/cabecalho01.wJ-o35nG.webp',
     inicioHref: 'index.html',

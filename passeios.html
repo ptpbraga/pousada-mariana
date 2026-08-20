@@ -26,7 +26,7 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Principais Passeios e Atrações Turísticas no Serro e Região",
+      "name": "Principais Passeios, Atrativos Naturais e Rota do Queijo no Serro e Região",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -34,7 +34,7 @@
           "item": {
             "@type": "TouristAttraction",
             "name": "Centro Histórico do Serro",
-            "description": "Conjunto urbano e arquitetônico colonial tombado pelo IPHAN com igrejas barrocas e ladeiras de pedra.",
+            "description": "Primeira cidade brasileira tombada pelo IPHAN (1938), com casario colonial, igrejas barrocas, escadarias e ladeiras de pedra.",
             "address": { "@type": "PostalAddress", "addressLocality": "Serro", "addressRegion": "MG", "addressCountry": "BR" }
           }
         },
@@ -43,8 +43,8 @@
           "position": 2,
           "item": {
             "@type": "TouristAttraction",
-            "name": "Distrito de Milho Verde",
-            "description": "Distrito histórico com poços naturais, cachoeiras e paisagem de montanhas na Serra do Espinhaço.",
+            "name": "Distrito de Milho Verde e Capivari",
+            "description": "Distrito histórico e comunidade quilombola com cachoeiras famosas: do Moinho, Carijó, Lajeado, Piolho, Tempo Perdido e Maria Bruna.",
             "address": { "@type": "PostalAddress", "addressLocality": "Serro", "addressRegion": "MG", "addressCountry": "BR" }
           }
         },
@@ -53,9 +53,29 @@
           "position": 3,
           "item": {
             "@type": "TouristAttraction",
+            "name": "São Gonçalo do Rio das Pedras",
+            "description": "Povoado histórico entre montanhas com as Cachoeiras do Comércio, Grota Seca e Mina Rica.",
+            "address": { "@type": "PostalAddress", "addressLocality": "Serro", "addressRegion": "MG", "addressCountry": "BR" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "TouristAttraction",
             "name": "Parque Estadual do Pico do Itambé",
-            "description": "Uma das maiores altitudes da Serra do Espinhaço com trilhas, campos rupestres e vista panorâmica.",
+            "description": "Altitude de 2.052m, percurso 4x4, trilha até o cume e cachoeiras do Rio Vermelho, Nenem, Água Santa, Fumaça e Lajeado.",
             "address": { "@type": "PostalAddress", "addressLocality": "Santo Antônio do Itambé", "addressRegion": "MG", "addressCountry": "BR" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "TouristAttraction",
+            "name": "Rota do Queijo Artesanal do Serro",
+            "description": "Modo de fazer tombado pelo Iepha (2002) e Iphan (2008). Produtores premiados mundialmente na França e no Prêmio Queijo Brasil.",
+            "address": { "@type": "PostalAddress", "addressLocality": "Serro", "addressRegion": "MG", "addressCountry": "BR" }
           }
         }
       ]
@@ -73,24 +93,25 @@
   <main id="conteudo">
     <section class="page-hero">
       <div class="page-hero-image">
-        <img src="/src/assets/images/regiao/sao-goncalo.webp" fetchpriority="high" decoding="async" width="1200" height="800"
-             alt="Montanhas e casario de São Gonçalo do Rio das Pedras ao entardecer no Serro MG">
+        <img src="/src/assets/images/regiao/pico-itambe.webp" fetchpriority="high" decoding="async" width="1200" height="800"
+             alt="Pico do Itambé e horizontes da Serra do Espinhaço no Serro MG">
       </div>
       <div class="container page-hero-content reveal">
         <div class="breadcrumb"><a href="index.html">Início</a><span>/</span>Passeios</div>
         <p class="eyebrow eyebrow-light">Guia da Pousada Mariana</p>
-        <h1>Guia de Passeios no Serro e Região: <em>Cachoeiras, História e Roteiros</em></h1>
-        <p>História, queijo artesanal, cachoeiras e montanhas: uma curadoria completa para você viver o Serro e seus distritos com tempo e encanto.</p>
+        <h1>Guia de Passeios no Serro e Região: <em>Cachoeiras, História, Queijo e Roteiros</em></h1>
+        <p>História secular, cachoeiras cristalinas, queijos premiados mundialmente e montanhas da Serra do Espinhaço: sua curadoria completa de viagem.</p>
       </div>
     </section>
 
-    <div class="filter-wrap" aria-label="Filtrar passeios por localidade">
+    <div class="filter-wrap" aria-label="Filtrar atrações e passeios">
       <div class="container filters">
         <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Todos</button>
         <button class="filter-btn" type="button" data-filter="serro" aria-pressed="false">Serro</button>
-        <button class="filter-btn" type="button" data-filter="milho-verde" aria-pressed="false">Milho Verde</button>
-        <button class="filter-btn" type="button" data-filter="sao-goncalo" aria-pressed="false">São Gonçalo do Rio das Pedras</button>
-        <button class="filter-btn" type="button" data-filter="itambe" aria-pressed="false">Santo Antônio do Itambé</button>
+        <button class="filter-btn" type="button" data-filter="milho-verde" aria-pressed="false">Milho Verde & Capivari</button>
+        <button class="filter-btn" type="button" data-filter="sao-goncalo" aria-pressed="false">São Gonçalo</button>
+        <button class="filter-btn" type="button" data-filter="itambe" aria-pressed="false">Pico do Itambé</button>
+        <button class="filter-btn" type="button" data-filter="queijo" aria-pressed="false">Produtores de Queijo</button>
       </div>
     </div>
 
@@ -101,164 +122,272 @@
           <h2>O que fazer no Serro e região durante a viagem?</h2>
         </div>
         <div class="guide-intro-copy reveal reveal-delay-1">
-          <p class="lead">No Serro e nos seus distritos vizinhos, você pode explorar a arquitetura colonial do Centro Histórico, banhar-se nas cachoeiras de Milho Verde e São Gonçalo do Rio das Pedras e fazer trilhas na Serra do Espinhaço.</p>
-          <p>A Pousada Mariana serve como base estratégica para montar seus roteiros de viagem e degustar o tradicional Queijo do Serro. Use os links de localização para se orientar e converse com a recepção antes de sair para as atrações naturais.</p>
-          <div class="guide-note"><span aria-hidden="true">!</span><p><strong>Uma dica importante:</strong> Condições de estrada, acesso e nível dos rios podem mudar. Para áreas naturais, confirme a rota e considere um guia local.</p></div>
-          <a class="text-link" href="#gastronomia">Ver onde comer no Serro e região <span>→</span></a>
+          <p class="lead">No Serro e nos seus distritos vizinhos, você pode explorar a arquitetura colonial tombada pelo IPHAN, banhar-se em dezenas de cachoeiras em Milho Verde, São Gonçalo e Capivari, subir o imponente Pico do Itambé e vivenciar a centenária rota do Queijo do Serro.</p>
+          <p>A Pousada Mariana é a sua base central no centro histórico. Na recepção disponibilizamos mapas da cidade, dicas locais e contatos dos principais serviços. O Centro de Atendimento ao Turista (CAT) da Prefeitura também atende diariamente das 08h às 12h e das 13h às 17h pelo telefone (38) 3541-2754.</p>
+          <div class="guide-note">
+            <span aria-hidden="true">!</span>
+            <p><strong>Dicas práticas para caminhar e circular:</strong> As ruas do Serro têm calçamento em pedras antigas e calçadas estreitas ("pedreiras"). Recomendamos calçados leves e caminhadas a pé. Ao dirigir pelo centro histórico, atenção aos pedestres no meio das ruas. Para trilhas e cachoeiras distantes, consulte as condições de acesso e considere a contratação de um guia credenciado.</p>
+          </div>
+          <a class="text-link" href="#queijo">Ver produtores do tradicional Queijo do Serro <span>→</span></a>
         </div>
       </div>
     </section>
 
     <section class="places section">
       <div class="container">
+        <!-- SEÇÃO: SERRO -->
         <div class="place-section" id="serro" data-location-section="serro">
           <div class="place-section-head reveal">
-            <div><p class="eyebrow">A poucos passos</p><h2>Quais são os principais passeios no centro urbano do Serro?</h2></div>
-            <p class="lead">Os principais passeios no centro urbano do Serro incluem o Centro Histórico, o Museu Casa dos Ottoni, a Matriz de Nossa Senhora da Conceição e a Rota do Queijo Artesanal, todos a poucos passos da Pousada Mariana.</p>
+            <div><p class="eyebrow">A poucos passos</p><h2>Quais são os principais passeios no centro urbano do Serro e arredores?</h2></div>
+            <p class="lead">Os destaques no Serro incluem o Centro Histórico tombado pelo IPHAN, o Museu Regional Casa dos Ottoni, a Matriz da Conceição, a Igreja de Santa Rita e os atrativos naturais em Três Barras e Mato Grosso.</p>
           </div>
           <div class="place-grid">
             <article class="place-card reveal" data-category="serro">
-              <div class="place-image"><img src="/src/assets/images/pousada/cabecalho01.webp" loading="lazy" decoding="async" alt="Vista aérea dos telhados coloniais e da praça no centro histórico do Serro"><span class="place-tag">História · a pé</span></div>
-              <div class="place-body"><h3>Centro Histórico</h3><p>Ladeiras, sobrados, igrejas e perspectivas que revelam a antiga Vila do Príncipe a cada esquina.</p><div class="place-meta"><span><strong>Local</strong>Praça João Pinheiro e entorno, Centro</span><span><strong>Perfil</strong>Caminhada leve, livre</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Centro+Hist%C3%B3rico+do+Serro+MG" target="_blank" rel="noopener">Abrir localização do Centro Histórico no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/centro-historico-serro.webp" loading="lazy" decoding="async" alt="Casario colonial e ladeiras de pedra do Centro Histórico do Serro"><span class="place-tag">História · a pé</span></div>
+              <div class="place-body"><h3>Centro Histórico</h3><p>Primeira cidade tombada pelo IPHAN (1938), com mais de 300 anos, casarões coloniais, ladeiras e mirantes preservados.</p><div class="place-meta"><span><strong>Local</strong>Praça João Pinheiro, Praça Floriano Peixoto e entorno</span><span><strong>Perfil</strong>Caminhada a pé, livre</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Centro+Hist%C3%B3rico+do+Serro+MG" target="_blank" rel="noopener">Abrir Centro Histórico no mapa ↗</a></div>
             </article>
             <article class="place-card reveal reveal-delay-1" data-category="serro">
-              <div class="place-image"><img src="/src/assets/images/regiao/casa-ottoni.webp" loading="lazy" decoding="async" alt="Fachada branca e azul do Museu Regional Casa dos Ottoni"><span class="place-tag">Museu · cultura</span></div>
-              <div class="place-body"><h3>Casa dos Ottoni</h3><p>Museu instalado em um casarão do século XVIII, com acervo e jardim que aproximam o visitante da vida serrana.</p><div class="place-meta"><span><strong>Endereço</strong>Praça Cristiano Otoni, 72, Centro</span><span><strong>Perfil</strong>Visita cultural</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Museu+Regional+Casa+dos+Ottoni+Serro" target="_blank" rel="noopener">Abrir localização da Casa dos Ottoni no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/casa-ottoni.webp" loading="lazy" decoding="async" alt="Fachada colonial do Museu Regional Casa dos Ottoni no Serro"><span class="place-tag">Museu · cultura</span></div>
+              <div class="place-body"><h3>Casa dos Ottoni</h3><p>Museu instalado em casarão colonial do século XVIII, preservando acervo mobiliário, arte sacra e a memória política do Serro.</p><div class="place-meta"><span><strong>Endereço</strong>Praça Cristiano Otoni, 72, Centro</span><span><strong>Perfil</strong>Visita cultural e histórica</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Museu+Regional+Casa+dos+Ottoni+Serro" target="_blank" rel="noopener">Abrir Casa dos Ottoni no mapa ↗</a></div>
             </article>
             <article class="place-card reveal reveal-delay-2" data-category="serro">
-              <div class="place-image"><img src="/src/assets/images/regiao/matriz-serro.webp" loading="lazy" decoding="async" alt="Igreja Matriz de Nossa Senhora da Conceição no alto de uma ladeira do Serro"><span class="place-tag">Arquitetura · fé</span></div>
-              <div class="place-body"><h3>Matriz da Conceição</h3><p>Uma das imagens mais marcantes do Serro, no alto da longa escadaria que estrutura a paisagem da cidade.</p><div class="place-meta"><span><strong>Local</strong>Praça João Pinheiro, Centro</span><span><strong>Perfil</strong>Patrimônio e vista urbana</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Igreja+Matriz+Nossa+Senhora+da+Concei%C3%A7%C3%A3o+Serro" target="_blank" rel="noopener">Abrir localização da Matriz da Conceição no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/igreja-santa-rita.webp" loading="lazy" decoding="async" alt="Escadaria monumental de pedra e Igreja de Santa Rita no Serro"><span class="place-tag">Patrimônio · fé</span></div>
+              <div class="place-body"><h3>Igreja de Santa Rita</h3><p>Postal clássico do Serro no topo da famosa escadaria de pedras, com vista panorâmica inesquecível da cidade e das montanhas.</p><div class="place-meta"><span><strong>Local</strong>Ladeira de Santa Rita, Centro</span><span><strong>Perfil</strong>Mirante e patrimônio sacro</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Igreja+de+Santa+Rita+Serro+MG" target="_blank" rel="noopener">Abrir Igreja de Santa Rita no mapa ↗</a></div>
             </article>
             <article class="place-card reveal" data-category="serro">
-              <div class="place-image"><img src="/src/assets/images/regiao/queijo-serro.webp" loading="lazy" decoding="async" alt="Queijo artesanal do Serro e broa sobre uma mesa"><span class="place-tag">Gastronomia · tradição</span></div>
-              <div class="place-body"><h3>Rota do Queijo</h3><p>Conheça produtores, modos de fazer e maturações do Queijo Artesanal do Serro, patrimônio vivo da região.</p><div class="place-meta"><span><strong>Local</strong>Centro e zona rural de Serro</span><span><strong>Perfil</strong>Visita com agendamento</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Queijo+Artesanal+do+Serro+produtores" target="_blank" rel="noopener">Ver produtores do Queijo do Serro no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/matriz-serro.webp" loading="lazy" decoding="async" alt="Igreja Matriz de Nossa Senhora da Conceição no Serro"><span class="place-tag">Arquitetura</span></div>
+              <div class="place-body"><h3>Matriz da Conceição</h3><p>Uma das maiores e mais representativas igrejas barrocas de Minas Gerais, marco da religiosidade e arte colonial mineira.</p><div class="place-meta"><span><strong>Local</strong>Praça João Pinheiro, Centro</span><span><strong>Perfil</strong>Visitação sacra e arquitetura</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Igreja+Matriz+Nossa+Senhora+da+Concei%C3%A7%C3%A3o+Serro" target="_blank" rel="noopener">Abrir Matriz da Conceição no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-1" data-category="serro">
+              <div class="place-image"><img src="/src/assets/images/regiao/mato-grosso-serro.webp" loading="lazy" decoding="async" alt="Capela de Nossa Senhora das Dores e casario na Serra da Caroula no distrito de Deputado Augusto Clementino (Mato Grosso)"><span class="place-tag">Distrito · mirante</span></div>
+              <div class="place-body"><h3>Dep. Augusto Clementino (Mato Grosso)</h3><p>A 15 km de asfalto + 4 km de terra do Serro: visita à Serra da Caroula, Vila Fantasma, mirante da Igrejinha e Cachoeiras Pedra Lisa e Buraquinho.</p><div class="place-meta"><span><strong>Distância</strong>19 km (15 km asfalto + 4 km terra)</span><span><strong>Acesso</strong>Carro / Trilha leve</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Deputado+Augusto+Clementino+Serro+MG" target="_blank" rel="noopener">Abrir no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-2" data-category="serro">
+              <div class="place-image"><img src="/src/assets/images/regiao/tres-barras.webp" loading="lazy" decoding="async" alt="Igreja de São Geraldo e vila no Distrito de Três Barras"><span class="place-tag">Cachoeiras</span></div>
+              <div class="place-body"><h3>Distrito de Três Barras</h3><p>A apenas 13 km de asfalto da sede: ponto de fácil acesso para desfrutar das refrescantes Cachoeiras do Moinho do Beijo e do Poção.</p><div class="place-meta"><span><strong>Distância</strong>13 km (asfalto)</span><span><strong>Atrações</strong>Cachoeiras Moinho do Beijo e Poção</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Tres+Barras+Serro+MG" target="_blank" rel="noopener">Abrir Três Barras no mapa ↗</a></div>
             </article>
           </div>
         </div>
 
+        <!-- SEÇÃO: MILHO VERDE & CAPIVARI -->
         <div class="place-section" id="milho-verde" data-location-section="milho-verde">
           <div class="place-section-head reveal">
-            <div><p class="eyebrow">Pedra, água e silêncio</p><h2>Quais são os destaques de passeios em Milho Verde?</h2></div>
-            <p class="lead">Os destaques de passeios em Milho Verde são a Cachoeira do Moinho, a Cachoeira do Lajeado, a Cachoeira Maria Bruna e a Cachoeira do Tempo Perdido, em um distrito cercado por montanhas e poços naturais.</p>
+            <div><p class="eyebrow">Pedra, água e quilombo</p><h2>Quais são os destaques de passeios em Milho Verde e Capivari?</h2></div>
+            <p class="lead">A 24 km de asfalto do Serro, Milho Verde e a Comunidade Quilombola de Capivari reúnem algumas das mais belas cachoeiras de Minas Gerais, como a do Moinho, Lajeado, Carijó, Piolho, Tempo Perdido e Maria Bruna.</p>
           </div>
           <div class="place-grid">
             <article class="place-card reveal" data-category="milho-verde">
-              <div class="place-image"><img src="/src/assets/images/regiao/milho-verde.webp" loading="lazy" decoding="async" alt="Paisagem rochosa e poços naturais em Milho Verde"><span class="place-tag">Distrito · paisagem</span></div>
-              <div class="place-body"><h3>Vila de Milho Verde</h3><p>O encanto está no conjunto: ruas de terra, casinhas, pequenos comércios, horizontes de pedra e tempo desacelerado.</p><div class="place-meta"><span><strong>Local</strong>Centro do distrito, Serro, MG</span><span><strong>Perfil</strong>Passeio de dia inteiro</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Milho+Verde+Serro+MG" target="_blank" rel="noopener">Abrir localização de Milho Verde no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/igreja-prazeres-milho-verde.webp" loading="lazy" decoding="async" alt="Igreja histórica no alto da colina com horizontes de Milho Verde"><span class="place-tag">Distrito · cultura</span></div>
+              <div class="place-body"><h3>Vila de Milho Verde</h3><p>A 24 km (asfalto) do Serro. Ruas tranquilas de terra, Igreja de Nossa Senhora do Rosário no topo do morro e horizontes rochosos do Espinhaço.</p><div class="place-meta"><span><strong>Distância</strong>24 km de asfalto da Pousada Mariana</span><span><strong>Perfil</strong>Passeio de dia inteiro e gastronomia</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Milho+Verde+Serro+MG" target="_blank" rel="noopener">Abrir Milho Verde no mapa ↗</a></div>
             </article>
             <article class="place-card reveal reveal-delay-1" data-category="milho-verde">
-              <div class="place-image"><img src="/src/assets/images/regiao/cachoeira-moinho.webp" loading="lazy" decoding="async" alt="Construção de um antigo moinho ao lado de corredeiras em Milho Verde"><span class="place-tag">Natureza · banho</span></div>
-              <div class="place-body"><h3>Cachoeira do Moinho</h3><p>Água correndo sobre lajes de pedra ao lado de um antigo moinho, em uma das paisagens mais conhecidas do distrito.</p><div class="place-meta"><span><strong>Local</strong>Zona rural de Milho Verde</span><span><strong>Acesso</strong>Trilha, confirme as condições</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Moinho+Milho+Verde" target="_blank" rel="noopener">Abrir localização da Cachoeira do Moinho no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/cachoeira-moinho.webp" loading="lazy" decoding="async" alt="Cachoeira do Moinho e estrutura do moinho colonial em Milho Verde"><span class="place-tag">Cachoeira · clássica</span></div>
+              <div class="place-body"><h3>Cachoeira do Moinho</h3><p>Duas quedas d'água e lajeados de pedra com construção de antigo moinho colonial ao lado. Cartão-postal imperdível do distrito.</p><div class="place-meta"><span><strong>Local</strong>Milho Verde (acesso por trilha)</span><span><strong>Perfil</strong>Banho de rio e contemplação</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Moinho+Milho+Verde" target="_blank" rel="noopener">Abrir Cachoeira do Moinho no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-2" data-category="milho-verde">
+              <div class="place-image"><img src="/src/assets/images/regiao/capivari.webp" loading="lazy" decoding="async" alt="Comunidade Quilombola de Capivari com a Serra do Espinhaço e Pico do Itambé ao fundo"><span class="place-tag">Quilombo · cachoeiras</span></div>
+              <div class="place-body"><h3>Comunidade Quilombola Capivari</h3><p>A 32 km do Serro (20 km asfalto + 12 km terra). Berço de cachoeiras lendárias como Tempo Perdido, do Amaral, Canelau, do Coqueiro e Maria Bruna.</p><div class="place-meta"><span><strong>Distância</strong>32 km (20 km asfalto / 12 km terra)</span><span><strong>Perfil</strong>Ecoturismo e cultura quilombola</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Capivari+Serro+MG" target="_blank" rel="noopener">Abrir Capivari no mapa ↗</a></div>
             </article>
           </div>
 
-          <h3 class="place-subhead">Cachoeiras em Milho Verde</h3>
+          <h3 class="place-subhead">Circuito de Cachoeiras e Comunidades em Milho Verde e Capivari</h3>
           <div class="food-grid reveal">
             <article class="food-card">
               <div class="food-card-head"><span class="food-tag">Cachoeira</span></div>
-              <h3>Cachoeira do Lajeado (Milho Verde)</h3>
-              <p>Dentro da própria vila, com várias piscinas naturais entre formações rochosas. Trilha fácil, boa para crianças e idosos.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Cerca de 15 min a pé a partir da Rua Direita ou do campo de futebol, no centro de Milho Verde</span></div>
-              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Lajeado+Milho+Verde" target="_blank" rel="noopener">Abrir localização da Cachoeira do Lajeado no mapa ↗</a></div>
-            </article>
-            <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Cachoeira</span></div>
-              <h3>Cachoeira Maria Bruna</h3>
-              <p>Queda pequena e poço arredondado emoldurado por rocha, em um trecho tranquilo perto de Capivari.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Trilha curta (aprox. 1,3 km) a partir da região do Poço Preto, nos arredores de Milho Verde e Capivari</span></div>
-              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+Maria+Bruna+Milho+Verde" target="_blank" rel="noopener">Abrir localização da Cachoeira Maria Bruna no mapa ↗</a></div>
+              <h3>Cachoeira do Lajeado & Carijó</h3>
+              <p>O Lajeado fica a poucos minutos a pé do centro de Milho Verde, com piscinas naturais rasas entre blocos de pedra. A Carijó e a do Piolho completam o circuito clássico do distrito.</p>
+              <div class="place-meta"><span><strong>Como chegar</strong>Caminhada fácil a partir do centro de Milho Verde (15 minutos a pé)</span></div>
+              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Lajeado+Milho+Verde" target="_blank" rel="noopener">Abrir Cachoeira do Lajeado no mapa ↗</a></div>
             </article>
             <article class="food-card">
               <div class="food-card-head"><span class="food-tag">Cachoeira</span></div>
               <h3>Cachoeira do Tempo Perdido</h3>
-              <p>Uma queda de cerca de 22 metros que forma um poço raso de areia branca, apelidada de praia de água doce de Minas.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>De carro pela entrada de Milho Verde até Capivari (aprox. 18,5 km), seguido de caminhada leve de 1 km</span></div>
-              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+Tempo+Perdido+Serro+MG" target="_blank" rel="noopener">Abrir localização da Cachoeira do Tempo Perdido no mapa ↗</a></div>
+              <p>Queda de 22 metros com piscina de águas transparentes e faixa de areia branca finíssima, formando uma verdadeira praia de água doce em Capivari.</p>
+              <div class="place-meta"><span><strong>Como chegar</strong>32 km do Serro até Capivari, seguido de caminhada leve de 1 km</span></div>
+              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+Tempo+Perdido+Serro+MG" target="_blank" rel="noopener">Abrir Cachoeira do Tempo Perdido no mapa ↗</a></div>
+            </article>
+            <article class="food-card">
+              <div class="food-card-head"><span class="food-tag">Cultura & Natureza</span></div>
+              <h3>Cachoeiras de Capivari & Comunidades</h3>
+              <p>Cachoeiras Maria Bruna, do Amaral, Canelau e do Coqueiro. A região abriga também as comunidades quilombolas de Ausente, Vila Nova, Queimadas, Fazenda Santa Cruz e Baú.</p>
+              <div class="place-meta"><span><strong>Visitação</strong>Consulte guias locais para percursos e agendamentos nas comunidades</span></div>
+              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+Maria+Bruna+Milho+Verde" target="_blank" rel="noopener">Abrir Cachoeira Maria Bruna no mapa ↗</a></div>
             </article>
           </div>
         </div>
 
+        <!-- SEÇÃO: SÃO GONÇALO DO RIO DAS PEDRAS -->
         <div class="place-section" id="sao-goncalo" data-location-section="sao-goncalo">
           <div class="place-section-head reveal">
-            <div><p class="eyebrow">Água e horizonte</p><h2>O que visitar em São Gonçalo do Rio das Pedras?</h2></div>
-            <p class="lead">Em São Gonçalo do Rio das Pedras, vale visitar a Vila histórica de São Gonçalo e a famosa Cachoeira do Comércio, cercada por mata e pedras.</p>
+            <div><p class="eyebrow">Água cristalina e silêncio</p><h2>O que visitar em São Gonçalo do Rio das Pedras?</h2></div>
+            <p class="lead">Distante apenas 7 km de terra após Milho Verde (31 km do Serro), São Gonçalo é um dos povoados mais charmosos da Estrada Real, célebre pela Cachoeira do Comércio, Grota Seca e Mina Rica.</p>
           </div>
           <div class="place-grid">
             <article class="place-card reveal" data-category="sao-goncalo">
-              <div class="place-image"><img src="/src/assets/images/regiao/sao-goncalo.webp" loading="lazy" decoding="async" alt="Povoado de São Gonçalo do Rio das Pedras entre montanhas"><span class="place-tag">Distrito · mirantes</span></div>
-              <div class="place-body"><h3>Vila de São Gonçalo do Rio das Pedras</h3><p>Casario, praça da igreja e uma paisagem montanhosa que convida a caminhar, fotografar e ouvir histórias locais.</p><div class="place-meta"><span><strong>Local</strong>Praça da Igreja, distrito de Serro</span><span><strong>Perfil</strong>Passeio cultural e contemplativo</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=S%C3%A3o+Gon%C3%A7alo+do+Rio+das+Pedras+Serro" target="_blank" rel="noopener">Abrir localização de São Gonçalo no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/vila-sao-goncalo.webp" loading="lazy" decoding="async" alt="Vila colonial histórica e ruas de terra de São Gonçalo do Rio das Pedras"><span class="place-tag">Distrito · patrimônio</span></div>
+              <div class="place-body"><h3>Vila de São Gonçalo</h3><p>Povoado histórico com ruas de terra, casario bem conservado, artesanato em capim-dourado e restaurantes de comida mineira artesanal.</p><div class="place-meta"><span><strong>Distância</strong>7 km de terra após Milho Verde (31 km do Serro)</span><span><strong>Perfil</strong>Passeio tranquilo, cultura e pôr do sol</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=S%C3%A3o+Gon%C3%A7alo+do+Rio+das+Pedras+Serro" target="_blank" rel="noopener">Abrir São Gonçalo no mapa ↗</a></div>
             </article>
             <article class="place-card reveal reveal-delay-1" data-category="sao-goncalo">
-              <div class="place-image"><img src="/src/assets/images/regiao/cachoeira-comercio.webp" loading="lazy" decoding="async" alt="Quedas d'água da Cachoeira do Comércio em São Gonçalo"><span class="place-tag">Cachoeira · trilha</span></div>
-              <div class="place-body"><h3>Cachoeira do Comércio</h3><p>Quedas de água entre grandes blocos de pedra, um clássico para quem busca natureza perto do povoado.</p><div class="place-meta"><span><strong>Local</strong>São Gonçalo do Rio das Pedras</span><span><strong>Acesso</strong>Trilha, guia recomendado</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Com%C3%A9rcio+S%C3%A3o+Gon%C3%A7alo+do+Rio+das+Pedras" target="_blank" rel="noopener">Abrir localização da Cachoeira do Comércio no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/cachoeira-comercio.webp" loading="lazy" decoding="async" alt="Quedas d'água e piscinas naturais de pedra da Cachoeira do Comércio"><span class="place-tag">Cachoeira · banho</span></div>
+              <div class="place-body"><h3>Cachoeira do Comércio</h3><p>Uma sequência de quedas d'água e grandes piscinas naturais de pedras, cercadas por mata nativa e vegetação de altitude.</p><div class="place-meta"><span><strong>Local</strong>São Gonçalo do Rio das Pedras</span><span><strong>Acesso</strong>Trilha com grau de dificuldade moderado</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Com%C3%A9rcio+S%C3%A3o+Gon%C3%A7alo+do+Rio+das+Pedras" target="_blank" rel="noopener">Abrir Cachoeira do Comércio no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-2" data-category="sao-goncalo">
+              <div class="place-image"><img src="/src/assets/images/regiao/cachoeira-sao-goncalo.webp" loading="lazy" decoding="async" alt="Piscinas naturais de águas cristalinas e ducha em São Gonçalo do Rio das Pedras"><span class="place-tag">Trilhas · águas</span></div>
+              <div class="place-body"><h3>Grota Seca & Mina Rica</h3><p>Cachoeiras e poços naturais preservados no entorno do distrito, ideais para quem busca banho de rio com total privacidade e contato com a natureza.</p><div class="place-meta"><span><strong>Local</strong>Zona rural de São Gonçalo</span><span><strong>Acesso</strong>Trilha (guia local recomendado)</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeiras+Sao+Goncalo+do+Rio+das+Pedras" target="_blank" rel="noopener">Abrir cachoeiras no mapa ↗</a></div>
             </article>
           </div>
         </div>
 
+        <!-- SEÇÃO: PICO DO ITAMBÉ -->
         <div class="place-section" id="itambe" data-location-section="itambe">
           <div class="place-section-head reveal">
-            <div><p class="eyebrow">Serra do Espinhaço</p><h2>Como explorar o Pico do Itambé e Santo Antônio do Itambé?</h2></div>
-            <p class="lead">Para explorar o Parque Estadual do Pico do Itambé, recomenda-se contratamento de guia local devido às trilhas exigentes e altitude de 2.052 metros.</p>
+            <div><p class="eyebrow">Teto do Espinhaço</p><h2>Como explorar o Parque Estadual do Pico do Itambé?</h2></div>
+            <p class="lead">A 22 km de asfalto do Serro, o Parque Estadual do Pico do Itambé alcança 2.052 metros de altitude com campos rupestres, orquídeas raras, cachoeiras e trekking inesquecível.</p>
           </div>
           <div class="place-grid">
             <article class="place-card reveal" data-category="itambe">
-              <div class="place-image"><img src="/src/assets/images/regiao/pico-itambe.webp" loading="lazy" decoding="async" alt="Pico do Itambé visto entre formações rochosas da Serra do Espinhaço"><span class="place-tag">Parque · montanha</span></div>
-              <div class="place-body"><h3>Parque do Pico do Itambé</h3><p>Campos rupestres, paisagens amplas e uma das montanhas-símbolo do Espinhaço. O passeio exige planejamento.</p><div class="place-meta"><span><strong>Local</strong>Zona rural, Santo Antônio do Itambé, MG</span><span><strong>Perfil</strong>Trilha exigente, guia recomendado</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Parque+Estadual+do+Pico+do+Itamb%C3%A9" target="_blank" rel="noopener">Abrir localização do Pico do Itambé no mapa ↗</a></div>
+              <div class="place-image"><img src="/src/assets/images/regiao/pico-itambe.webp" loading="lazy" decoding="async" alt="Maciço do Pico do Itambé e campos rupestres na Serra do Espinhaço"><span class="place-tag">Parque · montanha</span></div>
+              <div class="place-body"><h3>Parque do Pico do Itambé</h3><p>A 22 km de asfalto do Serro. Unidade de conservação estadual com fauna e flora raras, campos rupestres e mirantes panorâmicos.</p><div class="place-meta"><span><strong>Distância</strong>22 km (asfalto) até a sede do parque</span><span><strong>Altitude</strong>2.052 metros no cume</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Parque+Estadual+do+Pico+do+Itamb%C3%A9" target="_blank" rel="noopener">Abrir Parque do Itambé no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-1" data-category="itambe">
+              <div class="place-image"><img src="/src/assets/images/regiao/trilha-itambe.webp" loading="lazy" decoding="async" alt="Trilha de caminhada e trekking rumo ao cume do Pico do Itambé a 2.052m"><span class="place-tag">Trekking · 4x4</span></div>
+              <div class="place-body"><h3>Subida ao Cume do Pico</h3><p>A partir da portaria do parque: percurso de 6.400m em estrada para veículo 4x4 + 5.848m em trilha a pé até o topo da montanha.</p><div class="place-meta"><span><strong>Percurso</strong>6,4 km (4x4) + 5,85 km de trilha a pé</span><span><strong>Requisito</strong>Preparo físico e guia credenciado</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Pico+do+Itambe+Santo+Antonio+do+Itambe" target="_blank" rel="noopener">Ver rota no mapa ↗</a></div>
+            </article>
+            <article class="place-card reveal reveal-delay-2" data-category="itambe">
+              <div class="place-image"><img src="/src/assets/images/regiao/cachoeiras-parque-itambe.webp" loading="lazy" decoding="async" alt="Circuito de cachoeiras e vegetação nativa no Parque Estadual do Pico do Itambé"><span class="place-tag">Cachoeiras do Parque</span></div>
+              <div class="place-body"><h3>Cachoeiras do Parque</h3><p>Circuito com Cachoeiras do Rio Vermelho, do Nenem, Água Santa, da Fumaça, Lajeado e Ponte de Pedra em meio à vegetação virgem do parque.</p><div class="place-meta"><span><strong>Local</strong>Parque Estadual do Pico do Itambé</span><span><strong>Perfil</strong>Banhos e trilhas ecológicas</span></div><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeiras+Parque+Estadual+do+Pico+do+Itamb%C3%A9" target="_blank" rel="noopener">Abrir cachoeiras no mapa ↗</a></div>
             </article>
           </div>
+        </div>
 
-          <h3 class="place-subhead">Cachoeiras em Santo Antônio do Itambé</h3>
-          <div class="food-grid reveal">
-            <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Cachoeira</span></div>
-              <h3>Cachoeira do Lajeado (Santo Antônio do Itambé)</h3>
-              <p>Corredeiras, cascatas e poços naturais de águas escurecidas nos afluentes do Rio Mãe D'Água, bem perto do centro da cidade.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Cerca de 2 km do centro de Santo Antônio do Itambé</span></div>
-              <div class="food-card-links"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Lajeado+Santo+Antonio+do+Itambe" target="_blank" rel="noopener">Abrir localização da Cachoeira do Lajeado no Itambé no mapa ↗</a></div>
+        <!-- SEÇÃO: ROTA DO QUEIJO DO SERRO & PRODUTORES -->
+        <div class="place-section" id="queijo" data-location-section="queijo">
+          <div class="place-section-head reveal">
+            <div><p class="eyebrow">Patrimônio Imaterial</p><h2>Produtores de Queijo do Serro e Onde Encontrar</h2></div>
+            <p class="lead">Trazida no século XVIII por portugueses da Serra da Estrela, a receita tradicional com leite cru, fermento natural (pingo) e coalho foi o 1º bem registrado como Patrimônio Cultural Imaterial de MG (Iepha-2002) e do Brasil (Iphan-2008). Conheça os produtores premiados e compre sem intermediários.</p>
+          </div>
+
+          <div class="place-grid">
+            <article class="place-card reveal" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/fazenda-ventura.webp" loading="lazy" decoding="async" alt="Queijo maturado Fazenda Ventura de Eduardo Pires"><span class="place-tag">Premiado Mundial</span></div>
+              <div class="place-body">
+                <h3>Fazenda Ventura (Eduardo Pires)</h3>
+                <p>Desde 1940 em família. Medalha de Ouro no VII Prêmio Queijo Brasil (2024), Bronze no Mundial de Tours na França (2023), Bronze no Mundial do Queijo do Brasil (2022) e Prata no III Prêmio Brasil. Tradicional e maturado de 30 a 60 dias. <strong>Disponível na Pousada Mariana!</strong></p>
+                <div class="place-meta">
+                  <span><strong>Local</strong>22 km do Serro (visitação agendada)</span>
+                  <span><strong>Contato</strong>(38) 99145-2770</span>
+                </div>
+                <a class="text-link" href="tel:+5538991452770">Ligar para Fazenda Ventura ↗</a>
+              </div>
+            </article>
+
+            <article class="place-card reveal reveal-delay-1" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/fazenda-maria-nunes.webp" loading="lazy" decoding="async" alt="Queijo artesanal Fazenda Maria Nunes de Chris e Jady Brandão"><span class="place-tag">Ouro na França</span></div>
+              <div class="place-body">
+                <h3>Fazenda Maria Nunes (Chris / Jady)</h3>
+                <p>5ª e 6ª geração na família, liderança feminina pioneira. Ouro e Prata no Mundial de Queijo Tours na França (2023, 2019, 2021) e Ouro no Prêmio Queijo Brasil 2025. Tradicional e maturado a partir de 20 dias.</p>
+                <div class="place-meta">
+                  <span><strong>Local</strong>20 km do Serro (Sto. Antônio do Itambé)</span>
+                  <span><strong>Contato</strong>(38) 99848-9647 / (31) 99355-2311</span>
+                </div>
+                <a class="text-link" href="tel:+5538998489647">Ligar para Fazenda Maria Nunes ↗</a>
+              </div>
+            </article>
+
+            <article class="place-card reveal reveal-delay-2" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/fazenda-bom-sucesso.webp" loading="lazy" decoding="async" alt="Queijo do Serro tradicional e temperado Fazenda Bom Sucesso Chokito"><span class="place-tag">Ouro Queijo Brasil</span></div>
+              <div class="place-body">
+                <h3>Fazenda Bom Sucesso (Adilson "Chokito")</h3>
+                <p>A apenas 5 km do Serro. Produz queijo Tradicional, Temperado e Maturado (Ouro no IV Prêmio Queijo Brasil). Produtos e doce de leite na Sorveteria Chokitus (Rua Nabib Bahmed 120), Supermercados BH e Bom Tempo.</p>
+                <div class="place-meta">
+                  <span><strong>Local</strong>5 km do Serro (visitação agendada)</span>
+                  <span><strong>Contato</strong>(38) 99971-1223 / (38) 99922-1016</span>
+                </div>
+                <a class="text-link" href="tel:+5538999711223">Ligar para Adilson Chokito ↗</a>
+              </div>
+            </article>
+
+            <article class="place-card reveal" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/fazenda-do-cedro.webp" loading="lazy" decoding="async" alt="Sala de maturação do Queijo do Cedro de Juninho e Grizielle Campos"><span class="place-tag">5ª Geração · Ouro</span></div>
+              <div class="place-body">
+                <h3>Fazenda do Cedro (Juninho / Grizielle)</h3>
+                <p>Produtores em 5ª geração, Ouro e Prata no III e IV Prêmio Queijo Brasil. Tradicional e maturado até 90 dias. Loja própria na escadaria de Santa Rita, Empório Queijo do Cedro e no Café da Praça (Praça João Pinheiro).</p>
+                <div class="place-meta">
+                  <span><strong>Local</strong>30 km do Serro / Lojas no Centro</span>
+                  <span><strong>Contato</strong>(38) 99979-4939 / (38) 99121-2167</span>
+                </div>
+                <a class="text-link" href="tel:+5538999794939">Ligar para Fazenda do Cedro ↗</a>
+              </div>
+            </article>
+
+            <article class="place-card reveal reveal-delay-1" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/serro-do-queijo.webp" loading="lazy" decoding="async" alt="Loja e espaço de degustação Serro do Queijo no Centro Histórico"><span class="place-tag">Loja & Envio Brasil</span></div>
+              <div class="place-body">
+                <h3>Serro do Queijo (Loja & Degustação)</h3>
+                <p>Comércio de queijos artesanais da região do Serro com sabores e períodos de maturação variados. Aberto todos os dias das 08:00hs às 17:00hs com degustação local e envio para todo o Brasil.</p>
+                <div class="place-meta">
+                  <span><strong>Endereço</strong>Rua Rio Branco, 137, Centro</span>
+                  <span><strong>Contato</strong>(38) 98819-6062 · serrodoqueijo.com</span>
+                </div>
+                <a class="text-link" href="https://serrodoqueijo.com" target="_blank" rel="noopener">Acessar serrodoqueijo.com ↗</a>
+              </div>
+            </article>
+
+            <article class="place-card reveal reveal-delay-2" data-category="queijo">
+              <div class="place-image"><img src="/src/assets/images/produtores/cooperserro.webp" loading="lazy" decoding="async" alt="Variedade de queijos artesanais e coloniais da CooperSerro"><span class="place-tag">Cooperativa desde 1964</span></div>
+              <div class="place-body">
+                <h3>CooperSerro (Produtores Rurais)</h3>
+                <p>Cooperativa criada em 1964. Além de queijo do Serro tradicional, produz e comercializa queijos pasteurizados (Cobocó, Prato, Ricota, Muçarela, Colonial). Loja em frente à antiga rodoviária.</p>
+                <div class="place-meta">
+                  <span><strong>Endereço</strong>Praça Angelo Miranda, 26, Centro</span>
+                  <span><strong>Contato</strong>(38) 3541-1001</span>
+                </div>
+                <a class="text-link" href="tel:+553835411001">Ligar para CooperSerro ↗</a>
+              </div>
             </article>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SEÇÃO: GASTRONOMIA -->
     <section class="section food-section" id="gastronomia">
       <div class="container">
         <div class="place-section-head reveal">
-          <div><p class="eyebrow">Sabor local</p><h2>Onde comer no Serro e nos distritos vizinhos?</h2></div>
-          <p class="lead">No Serro e nos distritos de Milho Verde, São Gonçalo e Santo Antônio do Itambé, você encontra restaurantes mineiros tradicionais, bares e bistrôs regionais.</p>
+          <div><p class="eyebrow">Sabor e afeto</p><h2>Onde comer no Serro e nos distritos vizinhos?</h2></div>
+          <p class="lead">Restaurantes tradicionais com comida no fogão a lenha, bares com petiscos mineiros, cafés coloniais e bistrôs artesanais na região.</p>
         </div>
 
         <div class="food-location">
           <p class="food-location-title">Serro</p>
           <div class="food-grid reveal reveal-delay-1">
             <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Bar</span></div>
-              <h3>Saideira Bar</h3>
-              <p>Petiscos, chope gelado e música ao vivo em um dos points mais animados do centro histórico.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua General Osório, 5, Centro, a poucos minutos a pé da Praça Floriano Peixoto</span></div>
+              <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
+              <h3>Vila do Príncipe</h3>
+              <p>Buffet de comida mineira tradicional servida em casarão histórico de frente para a praça central do Serro.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua Fernando Vasconcelos, 8, Centro</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Saideira+Bar+Serro+MG" target="_blank" rel="noopener">Como chegar ao Saideira Bar ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Vila+do+Principe+Serro+MG" target="_blank" rel="noopener">Abrir no mapa ↗</a>
+                <a class="text-link" href="https://www.instagram.com/viladoprinciperestaurante/" target="_blank" rel="noopener">Instagram ↗</a>
+              </div>
+            </article>
+            <article class="food-card">
+              <div class="food-card-head"><span class="food-tag">Bar & Petiscos</span></div>
+              <h3>Saideira Bar</h3>
+              <p>Petiscos regionais, chope gelado e música ao vivo a poucos minutos a pé da Pousada Mariana.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua General Osório, 5, Centro</span></div>
+              <div class="food-card-links">
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Saideira+Bar+Serro+MG" target="_blank" rel="noopener">Abrir no mapa ↗</a>
                 <a class="text-link" href="https://www.instagram.com/saideirabar__/" target="_blank" rel="noopener">Instagram ↗</a>
               </div>
             </article>
             <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Bar</span></div>
+              <div class="food-card-head"><span class="food-tag">Bar Tradicional</span></div>
               <h3>Bar Junior e Dodoia</h3>
-              <p>Point tradicional de comida caseira e frango ao molho pardo nas noites de sexta-feira, um clássico do Serro.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Fernando Vasconcelos, 240, Centro</span></div>
+              <p>Ponto tradicional de encontro com pratos caseiros e o famoso frango ao molho pardo nas noites de sexta-feira.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua Fernando Vasconcelos, 240, Centro</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Bar+Junior+e+Dodoia+Serro+MG" target="_blank" rel="noopener">Como chegar ao Bar Junior e Dodoia ↗</a>
-                <a class="text-link" href="https://www.facebook.com/pages/Bar-Junior-E-Dodoia/278073352223257" target="_blank" rel="noopener">Facebook ↗</a>
-              </div>
-            </article>
-            <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
-              <h3>Vila do Príncipe</h3>
-              <p>Buffet de comida mineira tradicional em um casarão no coração do Serro, com décadas de tradição e sabor.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Fernando Vasconcelos, 8, Centro, de frente para a praça principal</span></div>
-              <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Vila+do+Principe+Serro+MG" target="_blank" rel="noopener">Como chegar ao Restaurante Vila do Príncipe ↗</a>
-                <a class="text-link" href="https://www.instagram.com/viladoprinciperestaurante/" target="_blank" rel="noopener">Instagram ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Bar+Junior+e+Dodoia+Serro+MG" target="_blank" rel="noopener">Abrir no mapa ↗</a>
               </div>
             </article>
           </div>
@@ -270,63 +399,54 @@
             <article class="food-card">
               <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
               <h3>Angu Duro</h3>
-              <p>Referência em Milho Verde: buffet completo no almoço, e massas e pizzas para fechar a noite do distrito.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Manoel Esperidião, 330, Milho Verde</span></div>
+              <p>Buffet completo no almoço e opções de massas e pizzas caseiras para a noite em Milho Verde.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua Manoel Esperidião, 330, Milho Verde</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Angu+Duro+Milho+Verde" target="_blank" rel="noopener">Como chegar ao Restaurante Angu Duro ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Angu+Duro+Milho+Verde" target="_blank" rel="noopener">Abrir no mapa ↗</a>
                 <a class="text-link" href="https://www.instagram.com/angudurorestaurante/" target="_blank" rel="noopener">Instagram ↗</a>
               </div>
             </article>
             <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
+              <div class="food-card-head"><span class="food-tag">Fogão a Lenha</span></div>
               <h3>Xêro de Mato</h3>
-              <p>Cozinha mineira no fogão a lenha, dentro do Rancho Velho Hotel, com pratos afetivos e porções generosas.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Direita, 100, Milho Verde</span></div>
+              <p>Comida mineira autêntica no fogão a lenha, pratos afetivos e porções generosas.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua Direita, 100, Milho Verde</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Xero+de+Mato+Milho+Verde" target="_blank" rel="noopener">Como chegar ao Xêro de Mato ↗</a>
-                <a class="text-link" href="https://www.instagram.com/xero_di_mato_hospedagem/" target="_blank" rel="noopener">Instagram ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Xero+de+Mato+Milho+Verde" target="_blank" rel="noopener">Abrir no mapa ↗</a>
               </div>
             </article>
             <article class="food-card">
-              <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
+              <div class="food-card-head"><span class="food-tag">Bistrô</span></div>
               <h3>Casa de Babete</h3>
-              <p>Risotos e massas em clima de bistrô aconchegante, numa esquina charmosa do distrito.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Direita, 21 (esquina do Beco dos Prazeres), Milho Verde</span></div>
+              <p>Massas artesanais e risotos em ambiente acolhedor no charmoso Beco dos Prazeres.</p>
+              <div class="place-meta"><span><strong>Endereço</strong>Rua Direita, 21, Milho Verde</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Casa+de+Babete+Milho+Verde" target="_blank" rel="noopener">Como chegar à Casa de Babete ↗</a>
-                <a class="text-link" href="https://www.instagram.com/casadebabeteoficial/" target="_blank" rel="noopener">Instagram ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Casa+de+Babete+Milho+Verde" target="_blank" rel="noopener">Abrir no mapa ↗</a>
               </div>
             </article>
           </div>
         </div>
 
         <div class="food-location">
-          <p class="food-location-title">São Gonçalo do Rio das Pedras</p>
+          <p class="food-location-title">São Gonçalo do Rio das Pedras & Itambé</p>
           <div class="food-grid reveal reveal-delay-1">
             <article class="food-card">
               <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
-              <h3>Santa Matula</h3>
-              <p>Cozinha autoral em meio às montanhas de São Gonçalo. Funciona de terça a sábado, à noite.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>São Gonçalo do Rio das Pedras, distrito de Serro</span></div>
+              <h3>Santa Matula (São Gonçalo)</h3>
+              <p>Cozinha autoral e afetiva em São Gonçalo do Rio das Pedras. Atendimento noturno de terça a sábado.</p>
+              <div class="place-meta"><span><strong>Local</strong>São Gonçalo do Rio das Pedras</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Santa+Matula+Sao+Goncalo+do+Rio+das+Pedras" target="_blank" rel="noopener">Como chegar ao Santa Matula ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Santa+Matula+Sao+Goncalo+do+Rio+das+Pedras" target="_blank" rel="noopener">Abrir no mapa ↗</a>
                 <a class="text-link" href="https://www.instagram.com/santamatula.sgrp/" target="_blank" rel="noopener">Instagram ↗</a>
               </div>
             </article>
-          </div>
-        </div>
-
-        <div class="food-location">
-          <p class="food-location-title">Santo Antônio do Itambé</p>
-          <div class="food-grid reveal reveal-delay-1">
             <article class="food-card">
               <div class="food-card-head"><span class="food-tag">Restaurante</span></div>
-              <h3>Pousada Moinho</h3>
-              <p>Cozinha caseira mineira com vista para a Serra do Itambé. Aberto para hóspedes e visitantes.</p>
-              <div class="place-meta"><span><strong>Como chegar</strong>Rua Farinha Seca, s/n, Santo Antônio do Itambé</span></div>
+              <h3>Pousada Moinho (Santo Antônio do Itambé)</h3>
+              <p>Cozinha caseira mineira com linda vista para a Serra do Itambé. Aberto a visitantes e turistas.</p>
+              <div class="place-meta"><span><strong>Local</strong>Rua Farinha Seca, s/n, Santo Antônio do Itambé</span></div>
               <div class="food-card-links">
-                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Pousada+Moinho+Santo+Antonio+do+Itambe" target="_blank" rel="noopener">Como chegar ao Restaurante Pousada Moinho ↗</a>
-                <a class="text-link" href="https://www.instagram.com/pousadamoinhoo/" target="_blank" rel="noopener">Instagram ↗</a>
+                <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Pousada+Moinho+Santo+Antonio+do+Itambe" target="_blank" rel="noopener">Abrir no mapa ↗</a>
               </div>
             </article>
           </div>
@@ -334,42 +454,117 @@
       </div>
     </section>
 
+    <!-- SEÇÃO: ROTEIROS SUGERIDOS -->
     <section class="regional-strip">
       <div class="container">
         <div class="itinerary-head reveal">
-          <h2>Quais são as sugestões de roteiro de passeios no Serro?</h2>
-          <p class="lead">Oferecemos sugestões de roteiros de 1 a 3 dias englobando o centro histórico a pé, passeios de ecoturismo por cachoeiras e trekking no Pico do Itambé.</p>
+          <h2>Sugestões de roteiro de passeios no Serro</h2>
+          <p class="lead">Planeje sua estadia de 1 a 3 dias aproveitando o casario colonial a pé, o circuito de cachoeiras e a centenária Rota do Queijo do Serro.</p>
         </div>
         <div class="itinerary-grid reveal reveal-delay-1">
-          <article class="itinerary"><small>1 dia, sem carro</small><h3>Serro essencial</h3><p>Para mergulhar na história e nos sabores sem sair do centro.</p><ol><li>Caminhada pelo Centro Histórico</li><li>Casa dos Ottoni</li><li>Almoço mineiro e Queijo do Serro</li><li>Fim de tarde nas igrejas e mirantes</li></ol></article>
-          <article class="itinerary"><small>2 dias, natureza</small><h3>Águas e vilas</h3><p>Um dia para cada distrito, com paradas e banhos sem pressa.</p><ol><li>Milho Verde e Cachoeira do Moinho</li><li>Noite e café da manhã no Serro</li><li>São Gonçalo do Rio das Pedras</li><li>Cachoeira do Comércio com guia</li></ol></article>
-          <article class="itinerary"><small>3 dias, aventura</small><h3>Do casario ao pico</h3><p>História no primeiro dia e montanha no último, com preparo.</p><ol><li>Centro Histórico e museu</li><li>Milho Verde ou São Gonçalo do Rio das Pedras</li><li>Partida cedo para Santo Antônio</li><li>Parque Estadual do Pico do Itambé</li></ol></article>
+          <article class="itinerary">
+            <small>1 dia · a pé pelo Serro</small>
+            <h3>Serro Histórico & Queijo</h3>
+            <p>Conheça a história e as riquezas coloniais no centro.</p>
+            <ol>
+              <li>Caminhada pelo Centro Histórico e Casa dos Ottoni</li>
+              <li>Igreja Matriz e subida à Igreja de Santa Rita</li>
+              <li>Almoço típico mineiro no casarão do centro</li>
+              <li>Visita ao Serro do Queijo e Empório do Cedro</li>
+            </ol>
+          </article>
+          <article class="itinerary">
+            <small>2 dias · águas e vilas</small>
+            <h3>Milho Verde & São Gonçalo</h3>
+            <p>Dois distritos mágicos em meio à Serra do Espinhaço.</p>
+            <ol>
+              <li>Milho Verde, Cachoeira do Moinho e Lajeado</li>
+              <li>Visita à Comunidade Quilombola de Capivari</li>
+              <li>Pôr do sol em São Gonçalo do Rio das Pedras</li>
+              <li>Jantar gastronômico no Santa Matula</li>
+            </ol>
+          </article>
+          <article class="itinerary">
+            <small>3 dias · ecoturismo e pico</small>
+            <h3>Aventura no Pico do Itambé</h3>
+            <p>Natureza extrema e visitas a fazendas de queijo premiadas.</p>
+            <ol>
+              <li>Trilhas em Três Barras ou Dep. Augusto Clementino</li>
+              <li>Visita guiada à Fazenda Ventura ou Maria Nunes</li>
+              <li>Subida com guia ao Parque Estadual do Pico do Itambé</li>
+              <li>Retorno com café e descanso na Pousada Mariana</li>
+            </ol>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- SEÇÃO: GUIAS LOCAIS -->
     <section class="guides section">
       <div class="container guides-grid">
         <div class="reveal">
           <p class="eyebrow">Vá com quem conhece</p>
-          <h2>Como contratar guias locais para os passeios no Serro?</h2>
-          <p class="lead">Recomendamos contatar guias locais cadastrados para acessar cachoeiras distantes e trilhas de montanha com segurança.</p>
+          <h2>Guias locais credenciados</h2>
+          <p class="lead">Para trilhas de altitude, travessias e cachoeiras de acesso remoto, conte com guias experientes e conhecedores da região.</p>
         </div>
         <div class="guide-contacts reveal reveal-delay-1">
           <div class="guide-contact"><div><strong>Gustavo</strong><small>Serro · Guia turístico</small></div><a href="tel:+5531999857870" aria-label="Ligar para Gustavo">☎</a></div>
           <div class="guide-contact"><div><strong>Cristian</strong><small>Milho Verde · Guia turístico</small></div><a href="tel:+5531999770004" aria-label="Ligar para Cristian">☎</a></div>
-          <div class="guide-contact"><div><strong>Ricardo</strong><small>São Gonçalo do Rio das Pedras · Guia turístico</small></div><a href="tel:+5538988074384" aria-label="Ligar para Ricardo">☎</a></div>
+          <div class="guide-contact"><div><strong>Ricardo</strong><small>São Gonçalo do Rio das Pedras · Guia</small></div><a href="tel:+5538988074384" aria-label="Ligar para Ricardo">☎</a></div>
           <div class="guide-contact"><div><strong>Fernando</strong><small>Santo Antônio do Itambé · Guia</small></div><a href="tel:+5538998214717" aria-label="Ligar para Fernando">☎</a></div>
         </div>
       </div>
     </section>
 
+    <!-- SEÇÃO: APOIO AO TURISTA E SERVIÇOS ÚTEIS -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="place-section-head reveal">
+          <div><p class="eyebrow">Apoio ao Turista</p><h2>Serviços úteis e contatos essenciais no Serro</h2></div>
+          <p class="lead">Informações de utilidade pública para sua tranquilidade durante a estadia em nossa pousada e passeios na região.</p>
+        </div>
+        <div class="food-grid reveal reveal-delay-1">
+          <article class="food-card">
+            <div class="food-card-head"><span class="food-tag">Turismo</span></div>
+            <h3>CAT · Atendimento ao Turista</h3>
+            <p>Informações de visitação a monumentos históricos, guias, cachoeiras e distritos (Milho Verde, São Gonçalo, Capivari). Diariamente das 08:00hs às 12:00hs e 13:00 às 17:00hs.</p>
+            <div class="place-meta">
+              <span><strong>Telefone</strong>(38) 3541-2754</span>
+              <span><strong>Site</strong>www.serro.mg.gov.br</span>
+            </div>
+            <div class="food-card-links"><a class="text-link" href="tel:+553835412754">Ligar para o CAT ↗</a></div>
+          </article>
+          <article class="food-card">
+            <div class="food-card-head"><span class="food-tag">Saúde & Segurança</span></div>
+            <h3>Hospital, Polícia & Emergências</h3>
+            <p>Hospital Casa de Caridade Santa Tereza: (38) 3541-1224. Polícia Militar: (38) 3541-1308 / 99243-0010. Farmácias em horário comercial e plantão nos fins de semana.</p>
+            <div class="place-meta">
+              <span><strong>Hospital</strong>(38) 3541-1224</span>
+              <span><strong>Polícia Militar</strong>(38) 3541-1308</span>
+            </div>
+            <div class="food-card-links"><a class="text-link" href="tel:+553835411224">Ligar para o Hospital ↗</a></div>
+          </article>
+          <article class="food-card">
+            <div class="food-card-head"><span class="food-tag">Serviços</span></div>
+            <h3>Transporte, Bancos & Lavanderia</h3>
+            <p>Rodoviária do Serro: (38) 3541-1366. Bancos: BB, Caixa Econômica, Itaú e Sicoob. 77 Lavanderia Express: Rua Rio Branco 143 (08h às 22h, próx. à Caixa). Táxi: consultar na recepção.</p>
+            <div class="place-meta">
+              <span><strong>Rodoviária</strong>(38) 3541-1366</span>
+              <span><strong>Lavanderia</strong>Rua Rio Branco 143</span>
+            </div>
+            <div class="food-card-links"><a class="text-link" href="tel:+553835411366">Ligar para a Rodoviária ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: CONTATO -->
     <section class="contact section" id="contato">
       <div class="container contact-card reveal">
         <div class="contact-copy">
           <p class="eyebrow eyebrow-light">Sua base para explorar</p>
           <h2>Por que escolher a Pousada Mariana como base para os passeios?</h2>
-          <p class="lead">A Pousada Mariana oferece localização central privilegiada, quartos aconchegantes com ar-condicionado e café da manhã mineiro artesanal.</p>
+          <p class="lead">Localização central privilegiada, quartos com ar-condicionado, TV, frigobar, portaria 24h, ronda noturna e café da manhã mineiro artesanal das 06:30 às 09:30.</p>
           <div class="contact-actions">
             <a class="btn btn-primary" href="{{urlWhatsappPasseios}}" target="_blank" rel="noopener">Reservar pelo WhatsApp</a>
             <a class="btn btn-outline-light" href="{{urlBooking}}" target="_blank" rel="noopener">Ver Pousada Mariana no Booking ↗</a>
@@ -381,6 +576,10 @@
             <small>Endereço da pousada</small>
             <strong>Praça Floriano Peixoto, 44<br>Centro, Serro, MG</strong>
             <a href="{{urlMapa}}" target="_blank" rel="noopener">Abrir localização da pousada no mapa ↗</a>
+          </div>
+          <div>
+            <small>Telefone da pousada</small>
+            <strong><a href="tel:{{telefoneLink}}">{{telefonePrincipal}}</a></strong>
           </div>
         </div>
       </div>

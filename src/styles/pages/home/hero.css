@@ -3,9 +3,11 @@
     color: white;
     background: var(--forest-900);
     overflow: hidden;
-    padding: 6px;
-    height: 101vh;
-    padding-bottom: 10px;
+    padding: 6px 6px 10px;
+    /* min-height, nao height: preenche a tela em telas altas, mas cresce
+       junto com o conteudo no celular em vez de corta-lo. */
+    min-height: 101vh; /* fallback */
+    min-height: 101svh;
 }
 
 .hero-texture {
@@ -37,7 +39,6 @@
     min-height: 700px;
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
-    height: 93%;
     align-items: self-start;
     gap: 72px;
     padding-block: 82px 128px;

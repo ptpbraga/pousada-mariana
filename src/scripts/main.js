@@ -3,7 +3,6 @@ import '../styles/main.css';
 import { initHeaderScroll } from './modules/header-scroll.js';
 import { initMobileMenu } from './modules/mobile-menu.js';
 import { initReveal } from './modules/reveal.js';
-import { initLightbox } from './modules/lightbox.js';
 import { initTourFilters } from './modules/tour-filters.js';
 import { initCurrentYear } from './modules/current-year.js';
 
@@ -16,7 +15,6 @@ const modulos = [
   initHeaderScroll,
   initMobileMenu,
   initReveal,
-  initLightbox,
   initTourFilters,
   initCurrentYear,
 ];

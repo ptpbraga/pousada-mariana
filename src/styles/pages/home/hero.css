@@ -146,7 +146,8 @@
 
 .hero-note {
     position: absolute;
-    right: -28px;
+    /* mesma ideia do selo do cafe: -28px onde couber, recuo onde nao couber. */
+    right: max(-28px, calc(2px - var(--margem-lateral)));
     bottom: 5px;
     width: 215px;
     display: flex;

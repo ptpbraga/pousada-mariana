@@ -1,12 +1,23 @@
+/* Margem lateral efetiva do .container em cada faixa. Elementos decorativos
+   com deslocamento negativo (o selo do cafe, a nota do hero) usam este valor
+   para nunca ultrapassarem a borda da tela. */
+:root {
+  /* 100vw inclui a barra de rolagem, entao descontamos uma folga de 20px
+     para nao superestimar a margem e acabar cortando o elemento. */
+  --margem-lateral: max(24px, calc((100vw - var(--container) - 20px) / 2));
+}
+
 .container { width: min(calc(100% - 48px), var(--container)); margin-inline: auto; }
 .section { padding: 120px 0; }
 .section-soft { background: var(--cream); }
 
 @media (max-width: 820px) {
+  :root { --margem-lateral: 16px; }
   .container { width: min(calc(100% - 32px), var(--container)); }
   .section { padding: 84px 0; }
 }
 
 @media (max-width: 560px) {
+  :root { --margem-lateral: 12px; }
   .container { width: min(calc(100% - 24px), var(--container)); }
 }

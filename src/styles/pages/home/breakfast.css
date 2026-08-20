@@ -22,7 +22,9 @@
 .breakfast-seal {
   position: absolute;
   z-index: 3;
-  left: -28px;
+  /* -28px onde couber; perto disso, recua para nao ser cortado pela tela.
+     O +7px compensa a sobra da rotacao de -8deg do quadrado de 104px. */
+  left: max(-28px, calc(7px - var(--margem-lateral)));
   bottom: 34px;
   width: 104px;
   height: 104px;

@@ -1,0 +1,15 @@
+/* Credito do fotografo sobre imagens escuras: legenda da home e hero
+   da pagina de passeios. Uma linha menor, que nao compete com o texto. */
+.credito-foto {
+  display: block;
+  margin-top: 5px;
+  color: #c9d8ce;
+  font-size: 10px;
+}
+
+.credito-foto a {
+  color: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+}
+
+.credito-foto a:hover { color: white; }

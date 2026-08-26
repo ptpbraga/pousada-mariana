@@ -28,6 +28,22 @@
   text-align: center;
 }
 
+/* Credito do fotografo dentro da legenda: uma linha menor e discreta,
+   sem competir com o texto principal. */
+.credito-foto {
+  display: block;
+  margin-top: 5px;
+  color: #c9d8ce;
+  font-size: 10px;
+}
+
+.credito-foto a {
+  color: inherit;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+}
+
+.credito-foto a:hover { color: white; }
+
 @media (max-width: 1080px) {
   .history-grid { gap: 65px; }
 }

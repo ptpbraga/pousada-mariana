@@ -84,7 +84,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
-  padding: 42px 34px;
+  /* mais compacto: sao 8 depoimentos curtos, nao 2 longos */
+  padding: 30px 26px;
   color: var(--ink);
   background: var(--paper);
   border: 1px solid var(--line);
@@ -96,14 +97,14 @@
   content: "“";
   color: var(--terracotta);
   font-family: var(--fonte-titulo);
-  font-size: 58px;
+  font-size: 46px;
   line-height: .4;
 }
 
 .quote > p {
-  margin: 24px 0 32px;
+  margin: 18px 0 24px;
   font-family: var(--fonte-titulo);
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.5;
 }
 

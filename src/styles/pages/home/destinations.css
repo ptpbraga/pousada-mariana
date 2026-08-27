@@ -7,11 +7,21 @@
 .destination img { height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .8, .2, 1); }
 .destination:hover img { transform: scale(1.045); }
 
-.destination > span { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 25px; color: white; }
+/* Grid de duas colunas: o nome ocupa a primeira e o link a segunda.
+   Antes o link era posicionado de forma absoluta e passava por cima do
+   nome quando ele era longo ("Santo Antônio do Itambé") no celular. */
+.destination > span {
+  position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 25px; color: white;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  column-gap: 14px;
+}
+.destination small { grid-column: 1 / -1; }
 .destination small, .destination strong { display: block; }
 .destination small { color: var(--gold-warm); font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .destination strong { margin-top: 4px; font-family: var(--fonte-titulo); font-size: 30px; font-weight: 500; }
-.destination em { position: absolute; right: 0; bottom: 7px; font-style: normal; font-size: 11px; font-weight: 700; opacity: .9; }
+.destination em { grid-column: 2; justify-self: end; padding-bottom: 6px; font-style: normal; font-size: 11px; font-weight: 700; opacity: .9; white-space: nowrap; }
 
 @media (max-width: 820px) {
   .destination-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 350px 220px 280px; }
